@@ -66,6 +66,9 @@ function blob_fixup() {
         "${PATCHELF}" --replace-needed "libhidlbase.so" "libhidlbase-v32.so" "${2}"
         "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
         ;;
+    vendor/etc/dolby/dax-default.xml)
+        sed -i "/volume-leveler-enable/ s/true/false/g" "${2}"
+        ;;
     vendor/lib64/vendor.somc.camera.device@3.*-impl.so)
         "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
         ;;

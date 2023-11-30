@@ -88,7 +88,6 @@ vendor/lib/libaudcal.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioalsa.so
 vendor/lib/libaudioparsers.so
-vendor/lib/libqtigef.so
 vendor/lib64/libacdb-fts.so
 vendor/lib64/libacdbrtac.so
 vendor/lib64/libadiertac.so
@@ -96,7 +95,6 @@ vendor/lib64/libaudcal.so
 vendor/lib64/libaudio_log_utils.so
 vendor/lib64/libaudioalsa.so
 vendor/lib64/libaudioparsers.so
-vendor/lib64/libqtigef.so
 
 # Audio Firmware
 vendor/firmware/L-cs35l41-dsp1-spk-cali.bin
@@ -115,7 +113,6 @@ vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib/soundfx/libswdap.so
 vendor/lib/soundfx/libznrwrapper.so
 vendor/lib/libHpEqApi.so
 vendor/lib/libOARenderer.so
@@ -124,7 +121,6 @@ vendor/lib/libSNPE.so
 vendor/lib/libaudiokeymgr.so
 vendor/lib/libaudiosnpewrapper.so
 vendor/lib/libc++_shared.so
-vendor/lib/libdapparamstorage.so
 vendor/lib/libiVptApi.so
 vendor/lib/libiVptHkiDec.so
 vendor/lib/libiVptLibC.so
@@ -135,18 +131,15 @@ vendor/lib/libsony3daudioeffect.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libvpt3d.so
 vendor/lib/libznr.so
-vendor/lib/vendor.dolby.hardware.dms@1.0.so
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
 vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libswdap.so
 vendor/lib64/libHpEqApi.so
 vendor/lib64/libOARenderer.so
 vendor/lib64/libSForceVSE.so
 vendor/lib64/libaudiokeymgr.so
-vendor/lib64/libdapparamstorage.so
 vendor/lib64/libiVptApi.so
 vendor/lib64/libiVptHkiDec.so
 vendor/lib64/libiVptLibC.so
@@ -154,7 +147,6 @@ vendor/lib64/libops.so
 vendor/lib64/librebuffering.so
 vendor/lib64/libsony3daudioeffect.so
 vendor/lib64/libvpt3d.so
-vendor/lib64/vendor.dolby.hardware.dms@1.0.so
 
 # Audio Sony Effect
 vendor/etc/zoom_noise_reduction/znr_44k_ComboCam.tbl
@@ -1408,6 +1400,28 @@ vendor/lib64/vendor.display.color@1.3.so
 vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so
 vendor/lib64/vendor.display.postproc@1.0.so
+
+# Dolby
+system_ext/app/DaxUI/DaxUI.apk;OVERRIDES=AudioFX,MusicFX,SoundAmplifierPrebuilt
+system_ext/app/daxService/daxService.apk
+system_ext/framework/dolby_dax.jar
+vendor/bin/hw/vendor.dolby.hardware.dms@1.0-service
+vendor/etc/dolby/dax-default.xml
+vendor/etc/init/vendor.dolby.hardware.dms@1.0-service.rc
+vendor/lib/soundfx/libswdap.so
+vendor/lib/libdapparamstorage.so
+vendor/lib/libqtigef.so
+vendor/lib/libstagefright_soft_ac4dec.so
+vendor/lib/libstagefright_soft_ddpdec.so
+vendor/lib/libstagefrightdolby.so
+vendor/lib/vendor.dolby.hardware.dms@1.0.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdlbdsservice.so
+vendor/lib64/libqtigef.so
+vendor/lib64/libstagefrightdolby.so
+vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@1.0.so
 
 # DPM
 system/framework/tcmclient.jar
