@@ -2032,11 +2032,11 @@ vendor/firmware/tzwvcpybuf.mdt
 
 # Wifi
 vendor/bin/cnss-daemon
-vendor/etc/wifi/bdwlan.e16
-vendor/etc/wifi/bdwlan.e17
-vendor/etc/wifi/bdwlan.elf
+vendor/etc/wifi/bdwlan.e16;SYMLINK=vendor/firmware/qca6390/bdwlan.e16
+vendor/etc/wifi/bdwlan.e17;SYMLINK=vendor/firmware/qca6390/bdwlan.e17
+vendor/etc/wifi/bdwlan.elf;SYMLINK=vendor/firmware/qca6390/bdwlan.elf
 vendor/etc/wifi/icm.conf
-vendor/etc/wifi/regdb.bin
+vendor/etc/wifi/regdb.bin;SYMLINK=vendor/firmware/qca6390/regdb.bin
 vendor/etc/wifi/wifi_txpower.conf
 
 # WiFi Display (system) - from KB2001 14.0.0.81(EX01)
