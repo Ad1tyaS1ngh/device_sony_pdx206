@@ -31,19 +31,4 @@ $(DSP_MOUNT_POINT): $(LOCAL_INSTALLED_MODULE)
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(BT_FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT)
 
-WIFI_FIRMWARE_SYMLINKS := $(TARGET_OUT_VENDOR)/firmware
-$(WIFI_FIRMWARE_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
-	@echo "Creating wifi firmware symlinks: $@"
-	@mkdir -p $@/wlan/qca_cld
-	@mkdir -p $@/qca6390
-	$(hide) ln -sf /vendor/etc/wifi/regdb.bin $@/qca6390/regdb.bin
-	$(hide) ln -sf /vendor/etc/wifi/bdwlan.e16 $@/qca6390/bdwlan.e16
-	$(hide) ln -sf /vendor/etc/wifi/bdwlan.e17 $@/qca6390/bdwlan.e17
-	$(hide) ln -sf /vendor/etc/wifi/bdwlan.elf $@/qca6390/bdwlan.elf
-	$(hide) ln -sf /data/vendor/firmware/wlanmdsp.mbn $@/wlanmdsp.otaupdate
-	$(hide) ln -sf /mnt/vendor/persist/wlan_mac.bin $@/wlan/qca_cld/wlan_mac.bin
-	$(hide) ln -sf /vendor/etc/wifi/WCNSS_qcom_cfg.ini $@/wlan/qca_cld/WCNSS_qcom_cfg.ini
-
-ALL_DEFAULT_INSTALLED_MODULES += $(WIFI_FIRMWARE_SYMLINKS)
-
 endif

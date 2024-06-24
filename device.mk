@@ -548,6 +548,16 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-wfd.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-wfd.xml
 
+# WiFi firmware symlinks
+PRODUCT_PACKAGES += \
+    firmware_regdb.bin_symlink \
+    firmware_bdwlan.e16_symlink \
+    firmware_bdwlan.e17_symlink \
+    firmware_bdwlan.elf_symlink \
+    firmware_wlanmdsp.otaupdate_symlink \
+    firmware_wlan_mac.bin_symlink \
+    firmware_WCNSS_qcom_cfg.ini_symlink
+
 # XperiaParts
 PRODUCT_PACKAGES += \
     XperiaParts

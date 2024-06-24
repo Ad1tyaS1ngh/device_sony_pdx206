@@ -1,3 +1,52 @@
 soong_namespace {
     imports: ["hardware/qcom-caf/bootctrl"],
 }
+
+install_symlink {
+    name: "firmware_regdb.bin_symlink",
+    vendor: true,
+    installed_location: "firmware/qca6390/regdb.bin",
+    symlink_target: "/vendor/etc/wifi/regdb.bin",
+}
+
+install_symlink {
+    name: "firmware_bdwlan.e16_symlink",
+    vendor: true,
+    installed_location: "firmware/qca6390/bdwlan.e16",
+    symlink_target: "/vendor/etc/wifi/bdwlan.e16",
+}
+
+install_symlink {
+    name: "firmware_bdwlan.e17_symlink",
+    vendor: true,
+    installed_location: "firmware/qca6390/bdwlan.e17",
+    symlink_target: "/vendor/etc/wifi/bdwlan.e17",
+}
+
+install_symlink {
+    name: "firmware_bdwlan.elf_symlink",
+    vendor: true,
+    installed_location: "firmware/qca6390/bdwlan.elf",
+    symlink_target: "/vendor/etc/wifi/bdwlan.elf",
+}
+
+install_symlink {
+    name: "firmware_wlanmdsp.otaupdate_symlink",
+    vendor: true,
+    installed_location: "firmware/wlanmdsp.otaupdate",
+    symlink_target: "/data/vendor/firmware/wlanmdsp.mbn",
+}
+
+install_symlink {
+    name: "firmware_wlan_mac.bin_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/wlan_mac.bin",
+    symlink_target: "/mnt/vendor/persist/wlan_mac.bin",
+}
+
+install_symlink {
+    name: "firmware_WCNSS_qcom_cfg.ini_symlink",
+    vendor: true,
+    installed_location: "firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini",
+    symlink_target: "/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
+}
