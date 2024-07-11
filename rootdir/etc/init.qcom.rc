@@ -499,7 +499,7 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /system/vendor/etc/m
     user root
     group root
 
-on property:init.svc.vendor.charger=running
+on charger
     setprop persist.sys.usb.config mass_storage
     start vendor.qcom-post-boot
 
