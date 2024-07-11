@@ -12,6 +12,4 @@ esac
 case "$model" in
     "XQ-AS42" | "XQ-AS52" | "XQ-AS62" | "XQ-AS72" )
         setprop vendor.radio.multisim.config dsds;;
-    * )
-        setprop vendor.radio.multisim.config ss;;
 esac
