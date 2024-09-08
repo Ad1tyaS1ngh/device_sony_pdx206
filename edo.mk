@@ -240,6 +240,7 @@ PRODUCT_PACKAGES += \
     init.qti.ufs.rc \
     init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
+    init.qti.media.sh \
     init.qti.qcv.sh \
     qca6234-service.sh \
     init.recovery.qcom.rc \
@@ -357,7 +358,6 @@ PRODUCT_PACKAGES += \
     libavservices_minijail \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor \
-    libmm-omxcore \
     libc2dcolorconvert \
     libcodec2_hidl@1.0.vendor \
     libcodec2_vndk.vendor
@@ -397,7 +397,6 @@ PRODUCT_PACKAGES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    init.qti.media.sh \
     libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
@@ -407,6 +406,12 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
+
+# Partitions
+PRODUCT_PACKAGES += \
+    vendor_bt_firmware_mountpoint \
+    vendor_dsp_mountpoint \
+    vendor_firmware_mnt_mountpoint
 
 # Power
 PRODUCT_PACKAGES += \
@@ -427,6 +432,7 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    android.hardware.radio-service.compat \
     android.hardware.radio@1.5.vendor \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
