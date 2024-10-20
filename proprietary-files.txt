@@ -134,7 +134,7 @@ vendor/lib/libbluetooth_audio_session_qti.so
 vendor/lib/libbluetooth_audio_session_qti_2_1.so
 
 # Camera
-vendor/bin/hw/vendor.somc.hardware.camera.provider@1.0-service;DISABLE_CHECKELF
+vendor/bin/hw/vendor.somc.hardware.camera.provider@1.0-service
 vendor/camera/CHI08BS1/bokeh_comp.dat
 vendor/camera/CHI08BS1/color_ctrl.dat
 vendor/camera/CHI08BS1/dataflow.dat
@@ -966,10 +966,10 @@ vendor/lib64/libthreadutils.so
 vendor/lib64/local_libcamera_metadata.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 vendor/lib64/vendor.semc.hardware.extlight-V1-ndk_platform.so
-vendor/lib64/vendor.somc.camera.device@3.2-impl.so;DISABLE_CHECKELF
-vendor/lib64/vendor.somc.camera.device@3.3-impl.so;DISABLE_CHECKELF
-vendor/lib64/vendor.somc.camera.device@3.4-impl.so;DISABLE_CHECKELF
-vendor/lib64/vendor.somc.camera.device@3.5-impl.so;DISABLE_CHECKELF
+vendor/lib64/vendor.somc.camera.device@3.2-impl.so
+vendor/lib64/vendor.somc.camera.device@3.3-impl.so
+vendor/lib64/vendor.somc.camera.device@3.4-impl.so
+vendor/lib64/vendor.somc.camera.device@3.5-impl.so
 
 # Camera (camerax)
 vendor/lib/libcamxexternalformatutils.so
